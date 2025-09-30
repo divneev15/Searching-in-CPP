@@ -51,15 +51,50 @@ Searching is the process of finding the location of a given element (called the 
 
 ## 📋 Algorithms  
 
-## Program 1 – Linear Search **Algorithm (Detailed):** 1. Start the program. 2. Initialize a fixed array of size 7 with predefined values {9, 8, 5, 1, 0, 3, 2}. 3. Take the target element from the user as input. 4. Set a variable index = -1 to track if the element is found. 5. Traverse the array from the first element (index 0) to the last element (index size-1). * For each element, check if arr[i] == target. * If yes, store the index in index and break the loop. 6. After traversal: * If index != -1, print that the element was found at that index. * Else, print that the element is not found. 7. End the program. **Key Point:** Works on unsorted arrays.
+Got it 👍 You just need the **algorithm (ready-to-copy text)** for **Program 1 (Linear Search)** and **Program 2 (Binary Search)**.
+Here you go:
 
+---
 
---- 
+## **Program 1 – Linear Search**
 
+**Algorithm:**
 
+1. Start the program.
+2. Initialize an array with elements `{9, 8, 5, 1, 0, 3, 2}`.
+3. Input the target element to be searched.
+4. Set a flag variable `found = -1`.
+5. Repeat for each element in the array from index `0` to `size-1`:
 
+   * If the current element equals the target, store the index in `found` and break the loop.
+6. If `found != -1`, display "Element found at index = found".
+7. Else, display "Element not found".
+8. Stop the program.
 
-## Program 2 – Binary Search **Algorithm (Detailed):** 1. Start the program. 2. Initialize a fixed array of size 7 with predefined values {9, 8, 5, 1, 0, 3, 2}. 3. Sort the array in ascending order using sort(). 4. Display the sorted array to the user. 5. Take the target element from the user as input. 6. Set two pointers: * low = 0 (first index) * high = size - 1 (last index). 7. Repeat while low <= high: * Calculate mid = (low + high) / 2. * If arr[mid] == target, element is found → store index and stop the loop. * Else if arr[mid] < target, update low = mid + 1 (search right half). * Else, update high = mid - 1 (search left half). 8. After the loop ends: * If element was found, display its index in the sorted array. * Else, print that the element is not present. 9. Stop the program. **Key Point:** Faster but requires a sorted array.
+---
+
+## **Program 2 – Binary Search**
+
+**Algorithm:**
+
+1. Start the program.
+2. Initialize an array `{9, 8, 5, 1, 0, 3, 2}`.
+3. Sort the array in ascending order.
+4. Input the target element to be searched.
+5. Set two variables: `low = 0`, `high = size - 1`.
+6. Repeat while `low <= high`:
+
+   * Calculate `mid = (low + high) / 2`.
+   * If `arr[mid] == target`, element is found → print index and exit loop.
+   * Else if `arr[mid] < target`, set `low = mid + 1`.
+   * Else set `high = mid - 1`.
+7. If the element is not found, display "Element not present".
+8. Stop the program.
+
+---
+
+Would you like me to also **make the pseudocode style shorter (like just numbered steps)** so it looks neat for your college practical file?
+
 ---
 
 ### 🧾 Jump Search  
